@@ -272,6 +272,10 @@ section button:hover {
         background-image: url(./images/bg-hero-desktop.svg);
         background-size: cover;
     }
+    
+    h1 {
+        width: 80%;
+    }
 
     .header-logo-button {
         padding: 0 4em;
