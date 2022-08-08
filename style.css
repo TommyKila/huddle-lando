@@ -233,7 +233,7 @@ svg {
     margin-top: 2em;
 }
 
-.nav ul {
+.nav {
     display: flex;
     flex-direction: column;
     gap: 0.75em;
@@ -268,7 +268,7 @@ section button:hover {
         background-image: url(./images/bg-hero-desktop.svg);
         background-size: cover;
     }
-    
+
     .header-content h1 {
         width: 70%;
     }
@@ -284,11 +284,11 @@ section button:hover {
     .header-logo-button button {
         padding: 1em 4em;
     }
-    
+
     header img {
-       width: 50%;
+        width: 50%;
     }
-    
+
     .header-content {
         display: flex;
         align-items: center;
