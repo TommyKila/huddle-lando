@@ -1,0 +1,398 @@
+html {
+    font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content p {
+    width: 84%;
+    color: hsl(192, 100%, 9%);
+}
+
+header img {
+    margin: 3em 0;
+}
+
+header img,
+.header-content h1 {
+    width: 84%;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 3em;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.header-content button,
+section button {
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 4em;
+    margin-top: 2em;
+}
+
+.header-content button {
+    padding: 1em 5em;
+}
+
+.header-logo-button button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(192, 100%, 9%);
+    padding: 0.5em 2em;
+    font-weight: 700;
+    border-radius: 4em;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.1);
+}
+
+.header-logo-button img {
+    width: 30%;
+}
+
+footer * {
+    color: hsl(193, 100%, 96%);
+    text-align: start;
+}
+
+.footer-logo {
+    color: hsl(0, 0%, 100%);
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    margin-top: 2.5em;
+}
+
+p {
+    margin-top: 1em;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    transition: 250ms;
+    position: relative;
+    width: fit-content;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #ff52bf;
+    transition: transform 250ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+p,
+a,
+li,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    margin-top: 3.75em;
+}
+
+.container img {
+    width: 100%;
+}
+
+section {
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.container section:last-child {
+    margin-bottom: 10em;
+}
+
+section button {
+    padding: 0.75em 3em;
+}
+
+footer section {
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 94%;
+    align-self: center;
+    margin-top: -6em;
+    padding: 1.5em;
+}
+
+footer section>* {
+    text-align: center;
+    margin: 0;
+}
+
+section p {
+    color: hsl(208, 11%, 55%);
+}
+
+.header-logo-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+footer>img {
+    width: 40%;
+    margin-top: 3em;
+}
+
+.contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75em;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    align-self: center;
+}
+
+svg {
+    border: 0.1em solid hsla(0, 0%, 100%, 0.5);
+    border-radius: 100vh;
+    fill: #ffffff;
+    padding: 0.25em;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.icons {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-top: 1em;
+}
+
+svg:hover {
+    border: 0.1em solid #ff52bf;
+    fill: #ff52bf;
+}
+
+a:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.header-content button:hover,
+section button:hover {
+    opacity: 0.8;
+}
+
+.header-logo-button button:hover {
+    color: hsla(192, 100%, 9%, 0.6);
+}
+
+@media screen and (min-width: 1080px) {
+    header {
+        background-image: url(./images/bg-hero-desktop.svg);
+        background-size: cover;
+    }
+
+    .header-logo-button {
+        padding: 0 4em;
+    }
+
+    .header-logo-button img {
+        width: 20%;
+    }
+
+    .header-logo-button button {
+        padding: 1em 4em;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        width: 68%;
+    }
+
+    .header-content>* {
+        align-self: start;
+    }
+
+    .header-content h1 {
+        margin-top: 0;
+    }
+
+    header * {
+        text-align: start;
+    }
+
+    .header-flex {
+        display: flex;
+        align-items: center;
+        padding: 4em;
+    }
+
+    .container {
+        gap: 2.5em;
+    }
+
+    .container>* {
+        display: flex;
+        padding-left: 5em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        gap: 10em;
+    }
+
+    .card-typo {
+        width: 50%;
+    }
+
+    .container section * {
+        text-align: start;
+    }
+
+    .container img {
+        width: 50%;
+    }
+
+    .container section:first-child {
+        flex-direction: row-reverse;
+    }
+
+    section:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    footer section {
+        width: auto;
+        padding: 3em 10em;
+    }
+
+    footer section button {
+        margin-top: 1.5em;
+        padding: 1.25em 4em;
+    }
+
+    footer {
+        margin-top: 8em;
+        padding: 0 10em 4em;
+    }
+
+    footer>img {
+        width: 10%;
+    }
+
+    .footer-flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 2em;
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .contact {
+        gap: 1.5em;
+    }
+
+    .icons,
+    .contact,
+    .nav ul {
+        margin-top: 0;
+    }
+
+    .nav ul {
+        gap: 1em;
+    }
+
+    .icons {
+        align-self: start;
+    }
+
+    .copyright {
+        align-self: flex-end;
+        margin-right: -5em;
+    }
+
+    .contact li {
+        gap: 1.25em;
+    }
+}
