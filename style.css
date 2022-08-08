@@ -292,7 +292,7 @@ section button:hover {
     .header-content {
         display: flex;
         align-items: center;
-        width: 40%;
+        width: 46%;
     }
 
     .header-content>* {
