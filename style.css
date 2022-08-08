@@ -360,7 +360,7 @@ section button:hover {
 
     footer {
         margin-top: 8em;
-        padding: 0 10em 4em;
+        padding: 0 10em 2.5em;
     }
 
     footer>img {
@@ -397,7 +397,7 @@ section button:hover {
     .copyright {
         align-self: flex-end;
         margin-right: -5em;
-        margin-top: 5em;
+        margin-top: 7em;
     }
 
     .contact li {
