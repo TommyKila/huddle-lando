@@ -273,7 +273,7 @@ section button:hover {
         background-size: cover;
     }
     
-    h1 {
+    .header-content h1 {
         width: 60%;
     }
 
