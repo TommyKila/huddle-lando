@@ -284,7 +284,11 @@ section button:hover {
     .header-logo-button button {
         padding: 1em 4em;
     }
-
+    
+    header img {
+       width: 84%;
+    }
+    
     .header-content {
         display: flex;
         align-items: center;
