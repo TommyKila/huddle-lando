@@ -274,7 +274,7 @@ section button:hover {
     }
 
     .header-logo-button {
-        padding: 0 4em;
+        padding: 4em;
     }
 
     .header-logo-button img {
@@ -287,6 +287,7 @@ section button:hover {
 
     header img {
         width: 50%;
+        margin: 0;
     }
 
     .header-content {
@@ -311,7 +312,7 @@ section button:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 4em;
+        padding: 0 4em 2em 4em;
     }
 
     .container {
@@ -363,7 +364,7 @@ section button:hover {
     }
 
     footer>img {
-        width: 10%;
+        width: 25%;
     }
 
     .footer-flex {
