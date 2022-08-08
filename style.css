@@ -397,6 +397,7 @@ section button:hover {
     .copyright {
         align-self: flex-end;
         margin-right: -5em;
+        margin-top: 3em;
     }
 
     .contact li {
