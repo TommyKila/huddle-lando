@@ -102,10 +102,6 @@ footer * {
     color: hsl(0, 0%, 100%);
 }
 
-ul {
-    list-style: none;
-}
-
 h1,
 h2 {
     font-family: 'Poppins', sans-serif;
@@ -385,11 +381,11 @@ section button:hover {
 
     .icons,
     .contact,
-    .nav ul {
+    .nav {
         margin-top: 0;
     }
 
-    .nav ul {
+    .nav {
         gap: 1em;
     }
 
