@@ -404,3 +404,14 @@ section button:hover {
         gap: 1.25em;
     }
 }
+
+@media screen and (max-width: 450px) {
+    
+    .header-logo-button img {
+        margin: 2em 0;
+    }
+    
+    svg {
+        padding: 0.25em;
+    }
+}
