@@ -213,7 +213,7 @@ svg {
     border: 0.1em solid hsla(0, 0%, 100%, 0.5);
     border-radius: 100vh;
     fill: #ffffff;
-    padding: 0.5em;
+    padding: 0.25em;
     transition: 250ms;
     cursor: pointer;
 }
@@ -403,15 +403,15 @@ section button:hover {
     .contact li {
         gap: 1.25em;
     }
+    
+    svg {
+        padding: 0.5em;
+    }
 }
 
 @media screen and (max-width: 450px) {
     
     .header-logo-button img {
         margin: 2em 0;
-    }
-    
-    svg {
-        padding: 0.25em;
     }
 }
