@@ -409,6 +409,21 @@ section button:hover {
     }
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1180px) {
+    footer {
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+
+    .footer-flex {
+        width: 100%;
+    }
+
+    .copyright {
+        margin-right: 1em;
+    }
+}
+
 @media screen and (max-width: 450px) {
     
     .header-logo-button img {
