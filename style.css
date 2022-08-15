@@ -1,5 +1,5 @@
 html {
-    font-size: 18px;
+    font-size: 13px;
 }
 
 *,
@@ -217,7 +217,7 @@ svg {
     border: 0.1em solid hsla(0, 0%, 100%, 0.5);
     border-radius: 100vh;
     fill: #ffffff;
-    padding: 0.25em;
+    padding: 0.5em;
     transition: 250ms;
     cursor: pointer;
 }
@@ -269,6 +269,9 @@ section button:hover {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1080px) {
+    html {
+        font-size: 15px;
+    }
 
     .container,
     header img,
@@ -282,6 +285,10 @@ section button:hover {
 }
 
 @media screen and (min-width: 1080px) {
+    html {
+        font-size: 16px;
+    }
+
     header {
         background-image: url(./images/bg-hero-desktop.svg);
         background-size: cover;
@@ -368,7 +375,7 @@ section button:hover {
 
     footer section {
         width: auto;
-        padding: 2em 9em;
+        padding: 3em 10em;
     }
 
     footer section button {
@@ -438,5 +445,19 @@ section button:hover {
 
     .copyright {
         margin-right: 1em;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    html {
+        font-size: 18px;
+    }
+
+    footer section {
+        padding: 2em 6em;
+    }
+
+    footer section button {
+        padding: 1em 3em;
     }
 }
